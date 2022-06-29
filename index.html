@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHESS POO</title>
+  </head>
+  <body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"
+      integrity="sha512-NxocnqsXP3zm0Xb42zqVMvjQIktKEpTIbCXXyhBPxqGZHqhcOXHs4pXI/GoZ8lE+2NJONRifuBpi9DxC58L0Lw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript" src="./chess.js"></script>
+    <div id="panelT" class="panelT" onclick="panelGameOver()"></div>
+    <div id="final" class="final" onclick="panelGameOver()">
+      <h3 id="gameOverText" onclick="panelGameOver()">Game Over</h3>
+    </div>
+    <div class="panel">
+      <div class="name">
+        <h1>CHESS</h1>
+      </div>
+      <div class="movePanel">
+        <ol id="move" class="move">
+        </ol>
+      </div>
+      <div class="settings">
+        <h2>Settings</h2>
+        <div class="option">
+          <label for="random_background">Random background color</label>
+          <input
+            id="random_background"
+            type="checkbox"
+            onclick="changeBackground()"
+          />
+        </div>
+        <div class="option">
+          <label for="end_game">End Game</label>
+          <input id="end_game" class="btn" type="button" onclick="gameOver()" />
+        </div>
+        <div class="option">
+          <label for="tabla_bases">TablaBases</label>
+          <input id="tabla_bases" class="btn" type="button" onclick="tablaBases()" />
+        </div>
+        <div class="option">
+          <label for="reset">Reset</label>
+          <input id="reset" class="btn" type="button" onclick="resetC()" />
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+    <script type="text/javascript" src="./scripts/engine.js"></script>
+    <script type="text/javascript" src="./scripts/general.js"></script>
+    <script type="text/javascript" src="./scripts/script.js"></script>
+    <script type="text/javascript" src="./scripts/move.js"></script>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Trispace&display=swap");
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #42414d;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trispace", sans-serif;
+}
+
+body {
+  background-image: url(./wood.jpg);
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 2.5fr 2.5fr;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+
+}
+
+main {
+  display: block;
+  align-self: center;
+  justify-self: center;
+}
+
+.panelT{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #2b2a3381;
+  display: none;
+}
+
+.final {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 60vh;
+  background:  #2b2a33;
+  left: 25%;
+  top: 20vh;
+  border-radius: 16px;
+}
+
+.final h3 {
+  display: none;
+  color: white;
+  font-size: 56px;
+}
+
+.panel {
+  display: block;
+  align-self: center;
+  justify-self: center;
+  background: #2b2a33;
+  width: 500px;
+  height: 80vh;
+  border-radius: 8px;
+  scroll-behavior: auto;
+  overflow-y: auto;
+}
+
+.name {
+  margin: 4%;
+  width: 92%;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.movePanel {
+  border-radius: 8px;
+  overflow-y: auto;
+  margin: 20px;
+  width: auto;
+  background: #42414d;
+  height: 90%;
+}
+
+li {
+  color: white;
+  margin: 20px 0 20px 40px;
+  font-size: 18px;
+}
+
+.settings {
+  margin: 20px;
+  width: auto;
+}
+
+h2 {
+  color: white;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 20px;
+}
+
+.option {
+  border-radius: 8px;
+  background: #42414d;
+  padding: 20px;
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 10px;
+}
+.option label {
+  color: #888888;
+}
+
+.btn{
+  width: 13px;
+  height: 13px;
+  transition: all .1s;
+}
+
+.btn:hover{
+  background: #2b2a33;
+  border: 0;
+}
+
+
+canvas {
+  border-radius: 16px;
+  border: 2px solid #997354;
+}
